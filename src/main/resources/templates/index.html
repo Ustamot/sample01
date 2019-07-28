@@ -1,0 +1,28 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBootのサンプル01</title>
+    <style>
+      h1 { font-size:18pt; font-weight:bold; color:gray; }
+      body { font-size:13pt; color:gray; margin:5px 25px; }
+      pre { font-size:13pt; color:gray; padding:5px 10px; border:1px solid gray; }
+    </style>
+</head>
+<body>
+  <form id="login" th:action="@{'/login'}" method="post" >
+  <h1>ログインページ</h1>
+    <table>
+      <tr>
+        <td><span>ユーザーID</span></td>
+        <td><input type="text" name="userid1" value=""/></td>
+      </tr>
+      <tr>
+        <td><span>パスワード</span></td>
+        <td><input type="password" name="passwd1" value=""/></td>
+      </tr>
+    </table>
+    <input type="submit" value="ログイン" />
+  </form>
+</body>
+</html>
